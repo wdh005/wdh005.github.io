@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "원종현"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "안녕하세요 이제 막 개발에 눈을 떠 가는 원종현입니다. <br />열심히 공부해서 다양한 프로젝트를 하고 싶습니다!!"
   location         : "Republic of Korea"
   email            : "jonghyeon2046@gmail.com"
   links:
