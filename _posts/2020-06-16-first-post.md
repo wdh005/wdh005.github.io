@@ -3,9 +3,12 @@ title:  "github.io blog 시작하기"
 excerpt: "GitHub Blog 서비스인 github.io를 통해서 블로그 & 포트폴리오 만들기를 시작했다."
 
 categories:
-  - Blog
+  - jekyll
+  - minimal-mistakes
 tags:
   - Blog
+  - github pages
+date : "2020-06-16 23:50"
 ---
 
 # GitHub을 이용하여 Blog 시작하기
