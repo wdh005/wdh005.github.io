@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "원종현"
+  name             : "쫑마토"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "안녕하세요 이제 막 개발에 눈을 떠 가는 원종현입니다. <br />열심히 공부해서 다양한 프로젝트를 하고 싶습니다!!"
+  bio              : "개발하는 토마토 쫑마토!!"
   location         : "Republic of Korea"
   email            : "jonghyeon2046@gmail.com"
   links:
@@ -105,9 +105,6 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -116,14 +113,11 @@ author:
       url: "https://github.com/wdh005"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/jjongmato__98/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
@@ -138,7 +132,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/jjongmato__98/"
 
 
 # Reading Files
@@ -209,7 +203,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -282,8 +276,12 @@ defaults:
 
   # _pages
   - scope:
-      path: "_pages"
+      path: "" #"_pages"
       type: pages
     values:
       layout: single
       author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
