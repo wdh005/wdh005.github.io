@@ -259,14 +259,14 @@ div {
 ```html
 <!-- HTML 1 -->
 <h1 class="title">제목1</h1> <!--red-->
-<h1>제목2</h1>
-<p class="main-text">본문1</p> <!--blue-->
-<p>본문2</p>
+<h1>제목2</h1><!--blue-->
+<p class="main-text">본문1</p> <!--red-->
+<p>본문2</p><!--blue-->
 ```
 
 ``` css
 /* main.css */
-/*<h1>은 글자색이 빨강이야!*/
+/*<h1>은 글자색이 파랑이야!*/
 h1 {
   color: blue;
 }
@@ -279,7 +279,7 @@ p {
 .title {
   color: red;
 }
-/*class="main-text"는 글자색이 파랑이야!*/
+/*class="main-text"는 글자색이 빨강이야!*/
 .main-text {
   color: red;
 }
