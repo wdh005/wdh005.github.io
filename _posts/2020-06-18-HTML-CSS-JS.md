@@ -130,3 +130,125 @@ html 문서의 정보를 지정한다.
 DOCTYPE은 마크업 언어에서 문서 형식을 정의한다.
 HTML은 1, 2, 3, 4, X-, 5 버전이 있다
 표준 모드는 HTML5이다.
+
+## META(웹 페이지 정보)
+---
+HTML 문서(웹페이지)에 관한 정보(표시 방식, 제작자(소유자), 내용, 키워드 등)를 검색엔진이나 브라우저에 제공합니다.
+빈(Empty) 태그입니다.
+
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="쫑마토">
+  <meta name="description" content="블로그">
+</head>
+```
+`<meta>`에서 사용할 수 있는 속성들
+
+| 속성 | 의미 | 값 |
+|---|:---:|---:|
+| `charset` | 문자인코딩 방식 | `UTF-8`, `EUC-KR` 등 |
+| `name` | 검색엔진에 제공하기 위한 정보의 종류(메타 데이터) | `author`, `description`, `keywords`, `viewport` 등 |
+| `content` | `name` 이나 `http-equiv` 속성의 값을 제공 |  |
+
+## LINK
+---
+외부 문서를 연결할 때 사용합니다.
+특히 HTML 외부에서 작성된 CSS 문서(xxx.css 파일)를 불러와 연결할 때 사용합니다.
+빈(Empty) 태그입니다.
+
+```html
+<head>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="icon" href="./favicon.png">
+</head>
+```
+| 속성 | 의미 | 값 |
+|---|:---:|---:|
+| `rel` | (필수)현재 문서와 외부 문서와의 관계를 지정 | `stylesheet`, `icon` 등 |
+| `href` | 외부 문서의 위치를 지정 | 경로 |
+
+## SCRIPT
+---
+HTML 문서에서 CSS는, 작성된 CSS를 `<link>`로 불러오거나 `<style></style>`안에 작성할 수 있습니다.
+JS는 `<script></script>`로 이 2가지 방식을 모두 사용할 수 있습니다.
+
+```html
+<!-- 불러오기 -->
+<script src="./js/main.js"></script>
+
+<!-- 작성하기 -->
+<script>
+  <!-- JS 코드 -->
+</script>
+```
+
+## CSS
+---
+
+## CSS 문법
+---
+선택자 {
+  속성: 값;
+  속성: 값;
+}
+
+선택자는 HTML에 CSS을 적용하기 위해 HTML의 특정한 요소를 선택하는 사인(sign)입니다.
+
+## 속성과 값
+---
+
+```css
+  div {
+    color: red; /* 글자색은 빨강 */
+    font-size: 20px; /* 글자 크기는 20px */
+    width: 300px; /* 가로 너비는 300px */
+    margin: 20px; /* 바깥 여백은 20px */
+    padding: 10px 20px; /* 안쪽 여백은 위아래 10px, 좌우 20px */
+    position: absolute; /* 위치는 부모 요소 기준 */
+  }
+```
+
+## CSS 선언 방식
+
+1. 태그에 직접 작성(인라인 방식) : HTML 태그에 직접 작성하기 떄문에 선택자 필요 없음
+```html
+  <div style="color: red;">태그에 직접 작성1</div> <!-- red -->
+  <div style="color: red;">태그에 직접 작성2</div> <!-- red -->
+```
+
+2. HTML에 포함(내장 방식) : CSS만 따로 작성 선택자가 필요하다, CSS 코드가 HTML의 `<style> </style>`안에 포함
+```html
+<head>
+  <style>
+    div {
+      color: red;
+    }
+  </style>  
+</head>
+<body>
+  <div>HTML에 포함1</div> <!-- red -->
+  <div>HTML에 포함2</div> <!-- red -->
+  <div>HTML에 포함3</div> <!-- red -->
+</body>
+```
+
+3. 외부에서 불러오기 : 분리된 하나의 CSS 파일을 여러 HTML 파일이 불러와서 사용 가능
+
+```html
+<!-- HTML 1 -->
+<head>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div>HTML에 외부에서 불러오기1</div> <!-- red -->
+</body>
+```
+
+``` css
+/* main.css */
+div {
+  color: red;
+}
+```
+
