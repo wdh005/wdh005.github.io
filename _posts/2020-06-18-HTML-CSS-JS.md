@@ -251,4 +251,36 @@ div {
   color: red;
 }
 ```
+---
 
+선택자는 적용하려는 태그의 이름을 입력 하는 방법과
+클래스로 찾는 방법이 있다.
+클래스를 선택자로 사용할 떄는 앞에 `.`을 붙여준다.
+```html
+<!-- HTML 1 -->
+<h1 class="title">제목1</h1> <!--red-->
+<h1>제목2</h1>
+<p class="main-text">본문1</p> <!--blue-->
+<p>본문2</p>
+```
+
+``` css
+/* main.css */
+/*<h1>은 글자색이 빨강이야!*/
+h1 {
+  color: blue;
+}
+/*<p>는 글자색이 파랑이야!*/
+p {
+  color: blue;
+}
+
+/*class="title"은 글자색이 빨강이야!*/
+.title {
+  color: red;
+}
+/*class="main-text"는 글자색이 파랑이야!*/
+.main-text {
+  color: red;
+}
+```
