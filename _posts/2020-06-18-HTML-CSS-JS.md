@@ -197,7 +197,6 @@ JS는 `<script></script>`로 이 2가지 방식을 모두 사용할 수 있습�
 
 ## 속성과 값
 ---
-
 ```css
   div {
     color: red; /* 글자색은 빨강 */
@@ -212,12 +211,14 @@ JS는 `<script></script>`로 이 2가지 방식을 모두 사용할 수 있습�
 ## CSS 선언 방식
 
 1. 태그에 직접 작성(인라인 방식) : HTML 태그에 직접 작성하기 떄문에 선택자 필요 없음
+
 ```html
   <div style="color: red;">태그에 직접 작성1</div> <!-- red -->
   <div style="color: red;">태그에 직접 작성2</div> <!-- red -->
 ```
 
 2. HTML에 포함(내장 방식) : CSS만 따로 작성 선택자가 필요하다, CSS 코드가 HTML의 `<style> </style>`안에 포함
+
 ```html
 <head>
   <style>
