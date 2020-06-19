@@ -1,5 +1,5 @@
 ---
-title:  "HTML, CSS, JS 공부 포스팅"
+title:  "HTML, CSS, JS 내용 정리"
 excerpt: "html, css, js 공부 내용 정리 "
 
 categories:
@@ -69,3 +69,64 @@ VS Code는 다양한 확장 기능을 제공하며 외부에서 다운로드 받
     각각 수정해야 하는 번거로움을 줄일 수 있습니다.
 
 
+## HTML 문서의 범위
+---
+
+**index.html** 같은 HTML 파일을 HTML 문서라고 할 수 있다.
+
+``` html
+<!DOCTYPE html>
+<html>
+  <head>
+    문서에 대한 정보를 담는다.
+  </head>
+  <body>
+    문서의 구조, 내용, contents를 담는다.
+  </body>
+</html>
+````
+
+``` html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="쫑마토">
+    <meta name="description" content="나의 블로그">
+    <title>토마토 농장</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <section>
+      <h1></h1>
+      <div>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+</body>
+</html>
+```
+## HTML
+---
+`<html>`는(은) HTML 문서의 전체 범위를 지정한다.
+웹 브라우저가 해석 할 html 문서가 어디에서 시작하며, 어디에서 끝나는지 알려주는 태그이다.
+
+## HEAD
+---
+html 문서의 정보를 지정한다.
+웹 페이지의 제목, 웹 페이지 인코딩 방식, 외부 파일 위치, 세팅 값 등
+화면을 구성하는 기본 설정 
+
+## BODY
+---
+사용자가 화면을 통해서 볼 수 있는 컨텐츠 형태, 레이아웃, 로고, 헤더, 푸터, 네비게이션, 메뉴, 버튼, 등 모든 구조에 해당
+
+## DOCTYPE(DTD, 버전 지정)
+---
+DOCTYPE은 마크업 언어에서 문서 형식을 정의한다.
+HTML은 1, 2, 3, 4, X-, 5 버전이 있다
+표준 모드는 HTML5이다.
