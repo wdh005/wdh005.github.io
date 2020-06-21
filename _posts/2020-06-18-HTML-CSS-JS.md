@@ -265,12 +265,36 @@ div {
   color: red;
 }
 ```
+
+ 우선순위는 인라인 방식 > 내장 방식 > 외부에서 불러오기 순으로 적용된다.
+
+ ``` html
+ <html lang="ko">
+<head>
+    <link rel="stylesheet" href="./a.css">
+    <style>
+        div {color: blue;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div style="color: chartreuse;">hi users</div> <!-- chartreuse  색이 적용된다.-->
+    <div>hi user2</div> <!-- blue 색이 적용된다.-->
+</body>
+</html>
+```
+
+``` css
+div { 
+    color : red;
+}
+```
 ---
 
 선택자는 적용하려는 태그의 이름을 입력 하는 방법과
 클래스로 찾는 방법이 있다.
 클래스를 선택자로 사용할 떄는 앞에 `.`을 붙여준다.
-```html
+``` html
 <!-- HTML 1 -->
 <h1 class="title">제목1</h1> <!--red-->
 <h1>제목2</h1><!--blue-->
