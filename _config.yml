@@ -24,8 +24,8 @@ description              : "개발자로 성장하는 과정 포스팅 & 포트�
 url                      : "https://wdh005.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/wdh005/wdh005.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png" 홈페이지 기본 티져 이미지
-logo                     : "/assets/images/logo.png"
+teaser                   : "/assets/images/logo500.png"
+logo                     : "/assets/images/logo88.png"
 masthead_title           : "쫑마토의 개발자 성장 일지"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "쫑마토"
-  avatar           : "/assets/images/logo.jpg"
+  avatar           : "/assets/images/logo500.png"
   bio              : "개발하는 토마토 쫑마토!!"
   location         : "Republic of Korea"
   email            : "jonghyeon2046@gmail.com"
