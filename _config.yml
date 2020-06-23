@@ -24,7 +24,7 @@ description              : "개발자로 성장하는 과정 포스팅 & 포트�
 url                      : "https://wdh005.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/wdh005/wdh005.github.io"
-teaser                   : "/assets/images/logo500.png"
+teaser                   : #"/assets/images/logo500.png"
 logo                     : "/assets/images/logo88.png"
 masthead_title           : "쫑마토의 개발자 성장 일지"
 # breadcrumbs            : false # true, false (default)
